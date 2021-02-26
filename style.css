@@ -1,0 +1,57 @@
+body {
+    font-family: "Roboto Light", sans-serif;
+    position: center;
+}
+#content {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 1%;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+.qr-inputs {
+    padding-bottom: 2%;
+}
+#url-input {
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid black;
+    width: 300px;
+}
+#url-input input[type=text]:focus {
+    border: none;
+    border-bottom: black;
+}
+#type-selection {
+    padding: 5px;
+    border-radius: 8px;
+    background-color: white;
+}
+.type-selection-option {
+    padding: 5px;
+}
+#color-selection {
+    border: none;
+}
+#image-selection {
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    text-align: center;
+}
+#qr-code {
+    padding-bottom: 1%;
+}
+#download-button {
+    font-size: 14pt;
+    background-color: deepskyblue;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: black;
+}
+#download-button button:focus {
+    border: none;
+}

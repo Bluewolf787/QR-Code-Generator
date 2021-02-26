@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <title>QR Generator</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="https://unpkg.com/qr-code-styling/lib/qr-code-styling.js"></script>
+    </head>
+
+    <body>
+        <div id="content">
+            <form id="qr-code-input" onsubmit="return false">
+                <div class="qr-inputs">
+                    <label for="url-input">URL<br></label>
+                    <input name="url-input" id="url-input" type="text" placeholder="Gib hier eine URL ein" onchange="updateQrUrl();" required>
+                </div>
+
+                <div class="qr-inputs">
+                    <label for="type-selection">Form<br></label>
+                    <select name="type-selection" id="type-selection" onChange="updateQrType();">
+                        <option class="type-selection-option" value="square">Quadrate</option>
+                        <option class="type-selection-option" value="dots">Punkte</option>
+                        <option class="type-selection-option" value="rounded">Abgerundet</option>
+                    </select>
+                </div>
+
+                <div class="qr-inputs">
+                    <label for="color-selection">Farbe<br></label>
+                    <input name="color-selection" id="color-selection" type="color" onChange="updateQrColor();">
+                </div>
+
+                <div class="qr-inputs">
+                    <label for="image-selection">Bild/Logo<br></label>
+                    <input name="image-selection" id="image-selection" type="file" accept="image/*" onChange="updateQrImage();">
+                </div>
+            </form>
+
+            <div id="qr-code"></div>
+
+            <button id="download-button" onClick="">Herunterladen</button>
+        </div>
+        <script type="text/javascript" src="QRCodeGenerator.js"></script>
+    </body>
+</html>
