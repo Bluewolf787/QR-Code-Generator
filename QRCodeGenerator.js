@@ -6,7 +6,7 @@ image = document.getElementById('image-selection');
 const qrCode = new QRCodeStyling({
     height: 300,
     width: 300,
-    data: 'https://github.com/Bluewolf787',
+    data: 'https://github.com/Bluewolf787/QR-Code-Generator',
     image: '',
     dotsOptions: {
         color: '#000',
